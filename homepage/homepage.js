@@ -58,9 +58,9 @@ window.onload = function() {
         var parseddata = JSON.parse(retrieveddata);
         var checked = parseddata.check
         if(checked)
-        maindiv1.innerHTML += '<button value="'+parseddata.id+'" id = "del_id" onclick="del_button(event)" class="del_btn">DEL</button><input value="'+parseddata.id+'" type="checkbox" checked = ""onclick="check_btn(event)" id = "checkbox" class="done_btn" ><div class="card"><a style="text-decoration:none"  href="./taskpage.html?id=' + parseddata.id + '">' + parseddata.title + '</a></div>'
+        maindiv1.innerHTML += '<button value="'+parseddata.id+'" id = "del_id" onclick="del_button(event)" class="del_btn">DEL</button><input value="'+parseddata.id+'" type="checkbox" checked = ""onclick="check_btn(event)" id = "checkbox" class="done_btn" ><div class="card"><a style="text-decoration:none"  href="../taskpage/taskpage.html?id=' + parseddata.id + '">' + parseddata.title + '</a></div>'
         else{
-            maindiv1.innerHTML += '<button value="'+parseddata.id+'" id = "del_id" onclick="del_button(event)" class="del_btn">DEL</button><input value = "' + parseddata.id + '" type="checkbox" unchecked = "" onclick="check_btn(event)" id = "checkbox" class="done_btn" ><div class="card"><a style="text-decoration:none"  href="./taskpage.html?id=' + parseddata.id + '">' + parseddata.title + '</a></div>'
+            maindiv1.innerHTML += '<button value="'+parseddata.id+'" id = "del_id" onclick="del_button(event)" class="del_btn">DEL</button><input value = "' + parseddata.id + '" type="checkbox" unchecked = "" onclick="check_btn(event)" id = "checkbox" class="done_btn" ><div class="card"><a style="text-decoration:none"  href="../taskpage/taskpage.html?id=' + parseddata.id + '">' + parseddata.title + '</a></div>'
         }
     }
     }) 
