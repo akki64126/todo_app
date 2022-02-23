@@ -1,0 +1,153 @@
+#myModal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+
+.modal-content {
+  background-color: #eef076;
+  margin: auto;
+  padding: 20px;
+  border: 4px solid rgb(102, 22, 22);
+  width: 50%;
+  min-height: 40%;
+}
+  
+.close {
+  font-size: 20px;
+  float: right;
+    
+}
+.Save {
+  float: right;
+  font-size: 28px;
+}
+  
+.maindiv{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    font-size: 30px;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+.btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.addbtn{
+    font-size: 30px;
+}
+body{
+    background-color: rgb(243, 237, 155);
+}
+.del_btn{
+  float: right;
+  height: 35px;
+  margin-left: 5px;
+}
+.done_btn{
+  float: left; 
+  width: 1.6em;
+  height: 1.6em;
+  margin-top: 7px;
+  margin-right: 10px;
+  box-shadow: 5px 8px 8px #363;
+}
+input[type="checkbox"]:checked + div{
+  text-decoration: line-through;
+  text-shadow: 0 0 8px rgb(2, 2, 2);
+  background-color: rgb(241, 241, 129);
+  border-color: #fed;
+}
+#abc{
+  width: 100%;
+  margin: auto;
+}
+button { 
+  transition-duration: 0.4s;
+  color:rgb(46, 109, 46); 
+  background-color:#fed; 
+  border:solid; 
+  border-color: #696 #363 #363 #696; 
+  box-shadow: 5px 8px 8px #363;
+}
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.header{
+  background-color: #f1c753;
+  width: 100%;
+  height: 110px;
+  text-align: center;
+  align-items: center;
+}
+.icon{
+  margin-bottom: 2px;
+}
+.card{
+  display: flex;
+  background-color: #f1c753;
+  border: solid;
+  border-color: #696 #363 #363 #696;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px ;
+  font-size: 20px;
+  box-shadow: 5px 8px 8px #363;
+}
+
+#task_name{
+  text-align: left;
+  margin: auto;
+  background-color: rgb(243, 237, 155);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#desc{
+  margin: auto;
+  text-align: left;
+  background-color: rgb(243, 237, 155);
+  width: 100%;
+}
+.input_box{
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+label{
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(223, 111, 37);
+}
+@media (min-width:800px) {
+    #abc{
+      width: 60%;
+    }
+}
+@media (min-width:800px){
+  #task_name{
+    width: 40%;
+  }
+  #desc{
+    width: 60%;
+  }
+}

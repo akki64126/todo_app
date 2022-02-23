@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="homepage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="homepage.js" ></script>
+    <title>TODO app</title>
+</head>
+<body>
+    <div class="header">
+        <p class="icon"><img src="3209203.png" width="50" height="50"></p>
+         <span style="font-size: 40px; color: rgb(223, 111, 37);"><b>ToDo List</b> </span>
+    </div>
+    <div class="btn_div">
+        <button class="addbtn" onclick="addtask()">Add Task</button> 
+    </div>
+    <div id="myModal">
+        <div class="modal-content">
+                <button class="close" onclick="close_modal()">&#10005;</button>
+            <div class="input_box">
+                <label><b>Task Name:</b></label>
+                <br>
+                <textarea  rows="1" id="task_name" type="text" placeholder="Enter Task Name"></textarea>
+            </div>
+            <div class="input_box">
+                <label><b>Description:</b></label>
+                <br>
+                <textarea rows="5" id="desc" type="text" placeholder="Enter Description"></textarea>
+                
+            </div>
+            <div>
+                <button id="sa" class="Save" onclick="save_task()">Save</button>
+            </div>
+        </div>
+    </div>
+    <div id="abc">
+        
+    </div>
+</body>
+</html>
