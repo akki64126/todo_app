@@ -14,28 +14,28 @@
         <p class="icon"><img src="../icon/3209203.png" width="50" height="50"></p>
          <span style="font-size: 40px; color: rgb(223, 111, 37);"><b>ToDo List</b> </span>
     </div>
-    <div class="btn_div">
-        <button class="addbtn" onclick="addtask()">Add Task</button> 
+    <div class="add_btn_div">
+        <button class="add_task_btn" onclick="addtask()">Add Task</button> 
     </div>
-    <div id="myModal">
-        <div class="modal-content">
-                <button class="close" onclick="close_modal()">&#10005;</button>
-            <div class="input_box">
+    <div id="input_popup">
+        <div class="input_form">
+                <button class="close_popup" onclick="close_modal()">&#10005;</button>
+            <div class="data_input">
                 <label><b>Task Name:</b></label>
                 <br>
                 <textarea  rows="1" id="task_name" type="text" placeholder="Enter Task Name"></textarea>
             </div>
-            <div class="input_box">
+            <div class="data_input">
                 <label><b>Description:</b></label>
                 <br>
-                <textarea rows="5" id="desc" type="text" placeholder="Enter Description"></textarea>
+                <textarea rows="5" id="task_desc" type="text" placeholder="Enter Description"></textarea>
             </div>
             <div>
-                <button id="sa" class="Save" onclick="save_task()">Save</button>
+                <button class="Save_task" onclick="save_task()">Save</button>
             </div>
         </div>
     </div>
-    <div id="abc">
+    <div id="task_list">
         
     </div>
 </body>

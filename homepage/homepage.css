@@ -1,4 +1,4 @@
-#myModal {
+#input_popup {
     display: none; 
     position: fixed;
     z-index: 1; 
@@ -8,13 +8,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
   }
-  
-
-.modal-content {
+.input_form {
   background-color: #eef076;
   margin: auto;
   padding: 20px;
@@ -22,35 +17,24 @@
   width: 50%;
   min-height: 40%;
 }
-  
-.close {
+.close_popup {
   font-size: 20px;
   float: right;
-    
 }
-.Save {
+.Save_task {
   float: right;
   font-size: 28px;
 }
-  
-.maindiv{
-    display: flex;
-    width: 50%;
-    padding: 10px;
-    margin: auto;
-    font-size: 30px;
-    background-color: lightblue;
-    margin-top: 20px;
-}
-.btn_div{
+.add_btn_div{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 30px;
+    font-size: 30px;
 }
-.addbtn{
+.add_task_btn{
     font-size: 30px;
 }
 body{
@@ -75,7 +59,7 @@ input[type="checkbox"]:checked + div{
   background-color: rgb(241, 241, 129);
   border-color: #fed;
 }
-#abc{
+#task_list{
   width: 100%;
   margin: auto;
 }
@@ -101,7 +85,7 @@ button:hover {
 .icon{
   margin-bottom: 2px;
 }
-.card{
+.tasks{
   display: flex;
   background-color: #f1c753;
   border: solid;
@@ -113,7 +97,6 @@ button:hover {
   font-size: 20px;
   box-shadow: 5px 8px 8px #363;
 }
-
 #task_name{
   text-align: left;
   margin: auto;
@@ -122,13 +105,13 @@ button:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#desc{
+#task_desc{
   margin: auto;
   text-align: left;
   background-color: rgb(243, 237, 155);
   width: 100%;
 }
-.input_box{
+.data_input{
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -139,7 +122,7 @@ label{
   color: rgb(223, 111, 37);
 }
 @media (min-width:800px) {
-    #abc{
+    #task_list{
       width: 60%;
     }
 }
@@ -147,7 +130,7 @@ label{
   #task_name{
     width: 40%;
   }
-  #desc{
+  #task_desc{
     width: 60%;
   }
 }

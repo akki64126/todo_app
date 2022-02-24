@@ -8,6 +8,7 @@
     background-color: rgb(243, 237, 155);
     margin-top: 13%;
     padding: 10px;
+    border-radius: 25px;
 }
 #title{
     transition-duration: 1s;
@@ -26,6 +27,7 @@
     word-wrap:break-word;
     font-size:30px;
     font-style: italic;
+    border-radius: 25px;
 }
 button { 
     transition-duration: 0.4s;
@@ -36,6 +38,7 @@ button {
     margin: auto;
     font-size: 20px;
     float: right;
+    border-radius: 25px;
 }
 button:hover {
     background-color: #4CAF50;
