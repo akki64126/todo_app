@@ -15,10 +15,10 @@ fetch("../data.json")
     .then(jsondata => 
         {
             if(current==true){
-            for (var i = 0;i<jsondata.length;i++)
-            localStorage.setItem(i,JSON.stringify(jsondata[i]))
-            current = false;
-            localStorage.setItem("start",current);}
+                for (var i = 0;i<jsondata.length;i++)
+                    localStorage.setItem(i,JSON.stringify(jsondata[i]))
+                    current = false;
+                    localStorage.setItem("start",current);}
             var arr = [];
             task_div = document.getElementById("task_list");
             
